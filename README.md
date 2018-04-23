@@ -4,6 +4,10 @@
 
 An example of a client UI to accompany the [Serverless Service](https://github.com/abeagley/reservation-serverless).
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=Vc3hcwFscME
+" target="_blank"><img src="http://img.youtube.com/vi/Vc3hcwFscME/0.jpg" 
+alt="Intro Video" width="240" height="180" border="10" /></a>
+
 ---
 
 ### Getting Started
