@@ -2,7 +2,7 @@
 
 ### What is this?
 
-An example of a serverless RESTful and GraphQL API UI client.
+An example of a client UI to accompany the [Serverless Service](https://github.com/abeagley/reservation-serverless).
 
 ---
 
