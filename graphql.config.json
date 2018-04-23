@@ -1,0 +1,26 @@
+{
+  "schema": {
+    "request": {
+      "url" : "https://ja8ibi4phg.execute-api.us-west-2.amazonaws.com/api/graphql",
+      "method" : "POST",
+      "postIntrospectionQuery" : true,
+      "options" : {
+        "headers": {
+          "user-agent" : "JS GraphQL"
+        }
+      }
+    }
+  },
+
+  "endpoints" : [
+    {
+      "name": "Default (https://ja8ibi4phg.execute-api.us-west-2.amazonaws.com/api/graphql)",
+      "url": "https://ja8ibi4phg.execute-api.us-west-2.amazonaws.com/api/graphql",
+      "options" : {
+        "headers": {
+          "user-agent" : "JS GraphQL"
+        }
+      }
+    }
+  ]
+}

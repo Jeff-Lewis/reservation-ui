@@ -1,0 +1,4 @@
+.card-body.reservations {
+  max-height: 350px;
+  overflow-y: auto;
+}

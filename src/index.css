@@ -1,5 +1,119 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+body, html {
+  background-color: #f4f3ef;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+a {
+  transition: color 0.2s linear;
+}
+
+.layout-container, .page-container, .section {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.container, .container-fluid {
+  position: relative;
+}
+
+.slide-left-enter-active {
+  animation: slide-left 500ms;
+  z-index: 2;
+}
+
+.slide-left-exit-active {
+  animation: slide-left 500ms reverse;
+  z-index: 1;
+}
+
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    position: absolute;
+    transform: translate3d(-300%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    position: absolute;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in;
+}
+
+.bg-video {
+  height: auto;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  z-index: 1;
+}
+
+#root, .main-container, .main-content {
+  height: 100%;
+  width: 100%;
+}
+
+.main-content {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 2;
+}
+
+.container-fluid {
+  height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .container-fluid .row {
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.page-card {
+  margin: 2rem auto;
+  max-width: 375px;
+  text-align: left;
+}
+
+.DateRangePicker, .DateRangePickerInput {
+  width: 100%;
+}
+
+.CalendarMonth[data-visible="false"] {
+  display: none;
+}
+
+.DayPicker_transitionContainer__vertical {
+  height: 342px !important;
 }
