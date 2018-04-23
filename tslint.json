@@ -1,0 +1,12 @@
+{
+  "extends": ["tslint-react", "tslint-config-standard"],
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts"
+    ]
+  },
+  "rules": {
+    "quotemark": [true, "single", "jsx-double"]
+  }
+}
